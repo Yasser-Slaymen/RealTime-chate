@@ -11,6 +11,9 @@
     --selection: #84389e;
   }
 .Login-Container{
+    position:absolute;
+    top:40%;
+    left: 25%;
     width:50% ;
     height: 25vh;
     margin: 0 auto;

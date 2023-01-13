@@ -17,7 +17,6 @@
     --selection: #84389e;
   }
 body{
-
     display: grid;
     place-items:center;
     margin-top: 4em;
@@ -28,6 +27,7 @@ h1{
 }
 
 .message__container{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -35,6 +35,13 @@ h1{
     height:40em;
     background-color:var(--white);
     border: .10em solid black;
+    overflow: hidden;
+
+}
+.user__typing{
+    width: 42em;
+    height: 40em;
+    overflow-y: scroll;
 }
 
 .nav__bare{
@@ -56,9 +63,19 @@ form{
 .hidden{
     display:none ;
 }
+#messageform{
+    position:absolute;
+    background-color: #000;
+    width:40em;
+    top: 34.5em;
+    left: 0.5em;
+    border-radius: .5em;
+    background-color:var(--lighter-blue);
+
+}
 
 .form-control{
-    width:75%;
+    width: 70%;
     height: 3em;
     margin-right: 1em;
     font-size: 1em;
@@ -85,7 +102,7 @@ input{
     border-radius: .5em 0 0 .5em;
     border: 1px solid blue;
 }
-button{
+.btn-outline-primary{
     font-family:'Rajdhani', sans-serif ;
     letter-spacing: .3em;
     font-size: 1.3em;
@@ -96,6 +113,7 @@ button{
     cursor: pointer;
     background-color: var(--dark-blue);
     color: #fff;
+    background-color: #000;
 }
 button:hover{
     background-color: var(--light-green);
