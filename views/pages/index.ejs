@@ -1,0 +1,70 @@
+<%- include('../includes/head') %>
+
+
+<!-- Message Container -->
+<main class="message__container" >
+    <header class="nav__bare">
+        <picture id="logo__nav">
+            <source srcset="./images/CTC_Primary_Logo_White.avif" type="image/avif">
+            <source srcset="./images/CTC_Primary_Logo_White.webp" type="image/webp">
+            <img src="./images/CTC_Primary_Logo_White.png" alt="logo" width="138px" height=" 45px">
+        </picture>
+
+        <h1>Start Chating </h1>
+
+    </header>
+
+    <!-- Login container -->
+
+    <section class="Login-Container">
+        <section class="login-header">
+            <img class="logo-login" src="../images/logoBoxs.png" alt="logo coding the curbs">
+
+        </section>
+        
+        <form action="" id="loginForm">
+            <section class="input-group">
+                    <article>
+                        <label for="nameInput">Nickname</label>
+                        <input type="text" class="input-login" id="nameInput" autocomplete="off" placeholder="add Name" >
+                    </article>
+
+                    <article>
+
+                         <button class="btn btn-success" type="submit" id="btn-success">Join Chat</button>
+
+                    </article>
+            </section>
+        </form>
+
+    </section>
+
+
+
+    <!-- Chat $ Form -->
+    <section class="container">
+
+            <section class="user__typing">
+                <ul class="messagesContainer">
+                    <!-- <li class="message">
+                        <p class="meta"> <span>10:00am</span></p>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                    </li> -->
+                </ul>
+            
+            </section>
+            <form action="" id="messageform" class="hidden">
+
+                <input type="text" class="form-control" id="messageInput" autocomplete="off" placeholder="Type....">
+                <button class="btn btn-outline-primary" type="submit" > Send 
+                    <span><img  class="icon" src="./images/Vector.png" alt="icon sending"></span>
+                </button>
+            </form>
+
+    </section>
+
+
+
+</main>
+
+<%- include('../includes/foot') %>   
